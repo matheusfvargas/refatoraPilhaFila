@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Fila = void 0;
 var objetos_1 = require("./objetos");
 var Fila = /** @class */ (function (_super) {
@@ -34,8 +34,8 @@ var Fila = /** @class */ (function (_super) {
             return null;
         }
         var removido = this.elementos[this.inicio];
+        this.elementos.splice(0, 1);
         this.inicio++;
-        this.fim -= 1;
         return removido;
     };
     Fila.prototype.proximo = function () {

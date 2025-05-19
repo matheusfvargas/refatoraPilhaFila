@@ -20,8 +20,8 @@ export class Fila extends Objetos<any>{
             return null
         }
         const removido = this.elementos[this.inicio];
+        this.elementos.splice(0,1)
         this.inicio++;
-        this
         return removido;
     }
 

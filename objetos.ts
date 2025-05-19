@@ -7,7 +7,7 @@ export class Objetos <T>{
     }
      // Verifica se o objeto está vazio
      estaVazia(): boolean {
-        if (this.elementos[0]===null){
+        if (this.elementos.length<1){
         return true;
     }
         return false;

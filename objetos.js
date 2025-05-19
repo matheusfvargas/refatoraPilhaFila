@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Objetos = void 0;
 var Objetos = /** @class */ (function () {
     function Objetos() {
@@ -7,7 +7,7 @@ var Objetos = /** @class */ (function () {
     }
     // Verifica se o objeto está vazio
     Objetos.prototype.estaVazia = function () {
-        if (this.elementos[0] === null) {
+        if (this.elementos.length < 1) {
             return true;
         }
         return false;

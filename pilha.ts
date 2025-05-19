@@ -31,6 +31,7 @@ export class Pilha extends Objetos<any> {
         }
         const elemento = this.elementos[this.topo];
         this.topo--;
+        this.elementos.pop()
         return elemento;
     }
 
